@@ -25,7 +25,6 @@ _opam/
 
 # devcontainer
 .devcontainer/data
-.devcontainer/docker-compose.override.yml
 
 # system and log files
 .DS_Store

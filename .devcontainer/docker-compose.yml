@@ -26,12 +26,15 @@ services:
       - DATABASE_CHOOSE_POOL=root
       - OPAMSOLVERTIMEOUT=180
       - PUBLIC_URL=http://localhost:3016
-      - SMTP_SENDER=test@econ.uzh.ch
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_SENDER=${SMTP_SENDER}
+      - SMTP_USERNAME=${SMTP_USERNAME}
       - VERSION=dev
-      - EMAIL_RATE_LIMIT=100
-      - MATCHER_MAX_CAPACITY=80
-      - MATCHER_RUN=false
-      - ECON_PACKAGE_REGISTRY_READ_TOKEN
+      - EMAIL_RATE_LIMIT=${EMAIL_RATE_LIMIT}
+      - MATCHER_MAX_CAPACITY=${MATCHER_MAX_CAPACITY}
+      - MATCHER_RUN=${MATCHER_RUN}
+      - ECON_PACKAGE_REGISTRY_READ_TOKEN=${ECON_PACKAGE_REGISTRY_READ_TOKEN}
     depends_on:
       - database-root
       - database-tenant

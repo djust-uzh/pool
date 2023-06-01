@@ -26,7 +26,7 @@ settings "General" tab uncheck "Allow Sourcetree to modify your global Mercurial
 
 ## Start
 
-If needed, edit `.devcontainer/docker-compose.override.yml` to suit your needs.
+If needed, create `.devcontainer/.env` to adjust default container settings. You can use `.env.sample` file in the project root folder.
 
 Click on the icon similar to "><" in the bottom left corner and select `Remote-Containers: Reopen in Container`.
 If any changes were made to files in `.devcontainer` folder the Container should be rebuilt (`Remote-Containers: Rebuild Container`)
